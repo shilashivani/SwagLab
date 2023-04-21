@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SwagLab" class="navigator-link">
+              <span class="suite-name border-failed">SwagLab</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SwagLab" class="navigator-link ">
+                    <span>C:\eclipse workplace\SwagLabProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SwagLab" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SwagLab" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SwagLab" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SwagLab" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SwagLab" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SwagLab" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SwagLab" class="hide-methods failed suite-SwagLab"> (hide)</a> <!-- hide-methods failed suite-SwagLab -->
+                      <a href="#" panel-name="suite-SwagLab" class="show-methods failed suite-SwagLab"> (show)</a> <!-- show-methods failed suite-SwagLab -->
+                    </span>
+                    <div class="method-list-content failed suite-SwagLab">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyLoginFeatures" class="method navigator-link" hash-for-method="varifyWorkingOfLoginButtonWithValiedUsernamePassword">varifyWorkingOfLoginButtonWithValiedUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="verifyIfCustomerIsAbleToAddMultipleProductToCart">verifyIfCustomerIsAbleToAddMultipleProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SwagLab -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SwagLab" class="hide-methods passed suite-SwagLab"> (hide)</a> <!-- hide-methods passed suite-SwagLab -->
+                      <a href="#" panel-name="suite-SwagLab" class="show-methods passed suite-SwagLab"> (show)</a> <!-- show-methods passed suite-SwagLab -->
+                    </span>
+                    <div class="method-list-content passed suite-SwagLab">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="addSingleProductToCart">addSingleProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="clickOnImageToAddproductToCart">clickOnImageToAddproductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="removesingleProductFromCart">removesingleProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="toVarifyProductChekoutCanselButtonFunctionality">toVarifyProductChekoutCanselButtonFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.ToVarifyAddToCartProduct" class="method navigator-link" hash-for-method="toVarifyProductChekoutFunctionality">toVarifyProductChekoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.VarifyLogOutFunction" class="method navigator-link" hash-for-method="verifyIfACustomerAbletoPlace">verifyIfACustomerAbletoPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLab" title="test.OrderPlaceOnSwagLab" class="method navigator-link" hash-for-method="verifyIfACustomerAbletoPlace">verifyIfACustomerAbletoPlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SwagLab -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SwagLab" class="panel SwagLab">
+          <div class="suite-SwagLab-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ToVarifyLoginFeatures</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyWorkingOfLoginButtonWithValiedUsernamePassword">
+                  </a> <!-- varifyWorkingOfLoginButtonWithValiedUsernamePassword -->
+                  <span class="method-name">varifyWorkingOfLoginButtonWithValiedUsernamePassword</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: Could not initialize class org.apache.logging.log4j.core.LoggerContext
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:254)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:218)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at org.apache.poi.util.IOUtils.&lt;clinit&gt;(IOUtils.java:43)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at utility.Parameterization.getExcelData(Parameterization.java:15)
+	at test.ToVarifyLoginFeatures.varifyWorkingOfLoginButtonWithValiedUsernamePassword(ToVarifyLoginFeatures.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLab-class-failed -->
+          <div class="suite-SwagLab-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.ToVarifyAddToCartProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIfCustomerIsAbleToAddMultipleProductToCart">
+                  </a> <!-- verifyIfCustomerIsAbleToAddMultipleProductToCart -->
+                  <span class="method-name">verifyIfCustomerIsAbleToAddMultipleProductToCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [1]
+	at test.ToVarifyAddToCartProduct.verifyIfCustomerIsAbleToAddMultipleProductToCart(ToVarifyAddToCartProduct.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLab-class-failed -->
+          <div class="suite-SwagLab-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.OrderPlaceOnSwagLab</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIfACustomerAbletoPlace">
+                  </a> <!-- verifyIfACustomerAbletoPlace -->
+                  <span class="method-name">verifyIfACustomerAbletoPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLab-class-passed -->
+          <div class="suite-SwagLab-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.ToVarifyAddToCartProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSingleProductToCart">
+                  </a> <!-- addSingleProductToCart -->
+                  <span class="method-name">addSingleProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnImageToAddproductToCart">
+                  </a> <!-- clickOnImageToAddproductToCart -->
+                  <span class="method-name">clickOnImageToAddproductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removesingleProductFromCart">
+                  </a> <!-- removesingleProductFromCart -->
+                  <span class="method-name">removesingleProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="toVarifyProductChekoutCanselButtonFunctionality">
+                  </a> <!-- toVarifyProductChekoutCanselButtonFunctionality -->
+                  <span class="method-name">toVarifyProductChekoutCanselButtonFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="toVarifyProductChekoutFunctionality">
+                  </a> <!-- toVarifyProductChekoutFunctionality -->
+                  <span class="method-name">toVarifyProductChekoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLab-class-passed -->
+          <div class="suite-SwagLab-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.VarifyLogOutFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIfACustomerAbletoPlace">
+                  </a> <!-- verifyIfACustomerAbletoPlace -->
+                  <span class="method-name">verifyIfACustomerAbletoPlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLab-class-passed -->
+        </div> <!-- panel SwagLab -->
+        <div panel-name="test-xml-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\eclipse workplace\SwagLabProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SwagLab&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CromeTest&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.VarifyLogOutFunction&quot;/&gt;
+      &lt;class name=&quot;test.ToVarifyAddToCartProduct&quot;/&gt;
+      &lt;class name=&quot;test.ToVarifyLoginFeatures&quot;/&gt;
+      &lt;class name=&quot;test.OrderPlaceOnSwagLab&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CromeTest --&gt;
+&lt;/suite&gt; &lt;!-- SwagLab --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SwagLab</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CromeTest (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SwagLab</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SwagLab</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SwagLab');
+function tableData_SwagLab() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyIfCustomerIsAbleToAddMultipleProductToCart')
+data.setCell(0, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(0, 3, 19316);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyIfACustomerAbletoPlace')
+data.setCell(1, 2, 'test.OrderPlaceOnSwagLab')
+data.setCell(1, 3, 11142);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'toVarifyProductChekoutCanselButtonFunctionality')
+data.setCell(2, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(2, 3, 8837);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'removesingleProductFromCart')
+data.setCell(3, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(3, 3, 8662);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'toVarifyProductChekoutFunctionality')
+data.setCell(4, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(4, 3, 6871);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clickOnImageToAddproductToCart')
+data.setCell(5, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(5, 3, 6734);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyIfACustomerAbletoPlace')
+data.setCell(6, 2, 'test.VarifyLogOutFunction')
+data.setCell(6, 3, 6534);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addSingleProductToCart')
+data.setCell(7, 2, 'test.ToVarifyAddToCartProduct')
+data.setCell(7, 3, 4431);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'varifyWorkingOfLoginButtonWithValiedUsernamePassword')
+data.setCell(8, 2, 'test.ToVarifyLoginFeatures')
+data.setCell(8, 3, 799);
+window.suiteTableData['SwagLab']= { tableData: data, tableDiv: 'times-div-SwagLab'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-SwagLab">
+              </div> <!-- times-div-SwagLab -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SwagLab</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SwagLab" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OrderPlaceOnSwagLab</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">configureReports</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ToVarifyAddToCartProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">configureReports</span>
+                <span class="method-start">275 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ToVarifyLoginFeatures</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">configureReports</span>
+                <span class="method-start">276 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VarifyLogOutFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">configureReports</span>
+                <span class="method-start">277 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">LonchBrowser</span>
+                <span class="method-start">297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIfACustomerAbletoPlace</span>
+                <span class="method-start">8127 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ToVarifyAddToCartProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">14667 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addSingleProductToCart</span>
+                <span class="method-start">20330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">24764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnImageToAddproductToCart</span>
+                <span class="method-start">37084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">43818 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removesingleProductFromCart</span>
+                <span class="method-start">64594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">73256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">toVarifyProductChekoutCanselButtonFunctionality</span>
+                <span class="method-start">78057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">86894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">toVarifyProductChekoutFunctionality</span>
+                <span class="method-start">98629 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">lonchBrpowser</span>
+                <span class="method-start">105500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyIfCustomerIsAbleToAddMultipleProductToCart</span>
+                <span class="method-start">124954 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ToVarifyLoginFeatures</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">144786 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">varifyWorkingOfLoginButtonWithValiedUsernamePassword</span>
+                <span class="method-start">161336 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.OrderPlaceOnSwagLab</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LonchBrowser</span>
+                <span class="method-start">162316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIfACustomerAbletoPlace</span>
+                <span class="method-start">178279 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
