@@ -39,9 +39,9 @@ public class ToVarifyLoginFeatures extends BaseTest{
 	public void varifyWorkingOfLoginButtonWithValiedUsernamePassword() throws EncryptedDocumentException, IOException {
 		test=reports.createTest("varifyWorkingOfLoginButtonWithValiedUsernamePassword");
 		SwagLoginPage swagLoginPage=new SwagLoginPage(driver);
-		swagLoginPage.enterUserName(Parameterization.getExcelData("Credentials", 0, 0));
-		System.out.println(Parameterization.getExcelData("Credentials", 0, 0));
-		swagLoginPage.enterPassword(Parameterization.getExcelData("Credentials", 1, 0));
+		swagLoginPage.enterUserName("standard_user");//(Parameterization.getExcelData("Credentials", 0, 0));
+		//System.out.println()(Parameterization.getExcelData("Credentials", 0, 0));
+		swagLoginPage.enterPassword("secret_sauce");//(Parameterization.getExcelData("Credentials", 1, 0));
 		swagLoginPage.clickToLogin();
 		Assert.assertEquals(driver.getTitle(),"Swag Labs");
 	}
